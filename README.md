@@ -2,7 +2,7 @@ You need to setup cuda and all required files for your gpu before you execute ne
 
 1. clone this directory with command       git clone https://github.com/surenpoghosian/talkieBackend
 2. go to talkieBackend folder
-3. run pip install bark
+3. run ### pip install bark
 4. run  -> CUDA_VISIBLE_DEVICES=""  python -m bark --text "Hello, my name is Talkie." --output_filename "example.wav"
 after command execution is finished you'll see example.wav file in same directory open it and check the result
 

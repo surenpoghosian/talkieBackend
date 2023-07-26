@@ -13,8 +13,23 @@ after command execution is finished you'll see `example.wav` file in same direct
 for running on **CPU**  `CUDA_VISIBLE_DEVICES="" `
 for running on **GPU**  `CUDA_VISIBLE_DEVICES=0 `
 
-
+**Install dependencies** `npm install`
 **Run the api** `node api.js` 
 **You can reach it on** `http://localhost:6969` 
 
 there is one `post request` which require `{"text" : "Hello, my name is Talkie." }` argument in the request body
+
+
+
+
+
+
+### Easier way to setup project
+You still need to setup the gpu environment on your device (cude etc.)
+
+**Move setup.sh to home directory** 
+**grant access by** `chmod +x setup.sh` 
+**run** `./setup.sh`
+
+ You can read setup.sh file, all the steps are visible there.
+ If anything isnot clear ask ChatGpt to explain what happens in setup.sh

@@ -45,13 +45,13 @@ async function streamLogs(command) {
 app.post('/api/generate_audio', async (req, res) => {
     try {
         const payload = req.body;
-        const barkDir = "../../bark"
+        const barkDir = "../bark"
         process.chdir(barkDir)
         const audioName = "Talkie_" + uuidv1() + ".wav";
         const command2 = `CUDA_VISIBLE_DEVICES="" python -m bark --text "${payload.text}" --history_prompt "v2/en_speaker_1" --output_filename "${audioName}"`;
         
         try {    
-            await execAsync("cd ../../bark")
+            await execAsync("cd ../bark")
             await streamLogs(command2);
 
             const audioFilePath = `${barkDir}/${audioName}`;

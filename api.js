@@ -51,7 +51,7 @@ app.post('/api/generate_audio', async (req, res) => {
         const command2 = `CUDA_VISIBLE_DEVICES="" python -m bark --text "${payload.text}" --history_prompt "v2/en_speaker_1" --output_filename "${audioName}"`;
         
         try {    
-            await execAsync("cd /home/elliot/bark")
+            await execAsync("cd ../../bark")
             await streamLogs(command2);
 
             const audioFilePath = `${barkDir}/${audioName}`;

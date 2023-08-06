@@ -33,3 +33,10 @@ You still need to setup the gpu environment on your device (cude etc.)
 
  You can read setup.sh file, all the steps are visible there.
  If anything isnot clear ask ChatGpt to explain what happens in setup.sh
+
+
+
+
+helpful resurce for cuda setup (see pip3 install part)
+
+ https://publish.reddit.com/embed?url=https://www.reddit.com/r/singularity/comments/12udgzh/bark_text2speechbut_with_custom_voice_cloning/jh893db/

@@ -48,7 +48,7 @@ app.post('/api/generate_audio', async (req, res) => {
         const barkDir = "../bark"
         process.chdir(barkDir)
         const audioName = "Talkie_" + uuidv1() + ".wav";
-        const command2 = `CUDA_VISIBLE_DEVICES="" python -m bark --text "${payload.text}" --history_prompt "v2/en_speaker_1" --output_filename "${audioName}"`;
+        const command2 = `set UDA_VISIBLE_DEVICES=0 & python -m bark --text "${payload.text}" --history_prompt "v2/en_speaker_1" --output_filename "${audioName}"`;
         
         try {    
             await execAsync("cd ../bark")

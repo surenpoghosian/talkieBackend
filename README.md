@@ -40,3 +40,5 @@ You still need to setup the gpu environment on your device (cude etc.)
 helpful resurce for cuda setup (see pip3 install part)
 
  https://publish.reddit.com/embed?url=https://www.reddit.com/r/singularity/comments/12udgzh/bark_text2speechbut_with_custom_voice_cloning/jh893db/
+
+pip3 install numpy --pre torch torchvision torchaudio --force-reinstall --index-url https://download.pytorch.org/whl/nightly/cu118
